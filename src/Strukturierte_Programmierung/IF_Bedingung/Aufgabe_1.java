@@ -1,4 +1,4 @@
-package Strukturierte_Programmierung.IF_Bedingung.Aufgabe_1;
+package Strukturierte_Programmierung.IF_Bedingung;
 
 import java.util.Random;
 
