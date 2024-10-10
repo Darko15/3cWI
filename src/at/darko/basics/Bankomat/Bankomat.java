@@ -8,7 +8,7 @@ public class Bankomat {
         int Kontostand = 5;
 
 
-        while(true) {
+        while (true) {
             System.out.println("Guten Tag! Was möchten Sie tun? Geben Sie die Nummer ein: " +
                     "1. Einzahlen " +
                     "2. Abheben " +
@@ -21,23 +21,22 @@ public class Bankomat {
             if (selection == 1) {
                 System.out.println("Wieviel möchten Sie einzahlen?");
                 int amount = scanner.nextInt();
-                System.out.println(amount + "€ erfolgreich eingezahlt!");
+                System.out.println(amount + "€ wurden erfolgreich eingezahlt!");
                 Kontostand += amount;
-                System.out.println("Ihr neuer Kontstand beträgt: " + Kontostand + "€");
+
 
             } else if (selection == 2) {
                 System.out.println("Wieviel möchten Sie abheben?");
                 int amount = scanner.nextInt();
-                System.out.println(amount + "€ erfolgreich abgehoben!");
-            }
-            else if (selection == 3) {
+                System.out.println(amount + "€ wurden erfolgreich abgehoben!");
+                Kontostand -= amount;
+
+            } else if (selection == 3) {
                 System.out.println("Ihr Kontstand beträgt: " + Kontostand + "€");
 
-            }
-            else if (selection == 4) {
-                System.out.println("Wieviel möchten Sie einzahlen?");
-                int amount = scanner.nextInt();
-                System.out.println(amount + "€ erfolgreich eingezahlt!");
+            } else if (selection == 4) {
+                System.out.println("Danke und Aufwiedersehen!");
+                break;
             }
 
         }
