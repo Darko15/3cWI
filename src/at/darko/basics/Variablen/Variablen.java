@@ -1,4 +1,4 @@
-package Strukturierte_Programmierung.Variablen;
+package at.darko.basics.Variablen;
 
 public class Variablen {
     public static void main(String[] args) {

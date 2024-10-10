@@ -1,4 +1,4 @@
-package Strukturierte_Programmierung.Switch_Statement;
+package at.darko.basics.Switch_Statement;
 
 import java.util.Random;
 
