@@ -3,7 +3,6 @@ package at.darko.basics.Cäsar_Verschlüsselung;
 public class Cäsar_Verschlüsselung {
 
     public static void main(String[] args) {
-
         String result = encrypt("abc");
         String results = decrypt("cde");
         System.out.println(result);
