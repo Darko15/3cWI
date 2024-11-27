@@ -31,5 +31,6 @@ public class Main {
 
         c3.honk(5);
 
+        c1.remainingRange();
     }
 }

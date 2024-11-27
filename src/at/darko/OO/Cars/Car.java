@@ -32,6 +32,10 @@ public class Car {
         for (int i = 0; i < amountOfRepetitions; i++) {
             System.out.println("Tuuut");
         }
+    }
 
+    public void remainingRange() {
+        int remainingRange = (this.fuelAmount / fuelConsumption) * 100;
+        System.out.println("I can drive another " + remainingRange + " kilometers");
     }
 }
