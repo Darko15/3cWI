@@ -51,5 +51,3 @@ public class Car {
         return serialNumber;
     }
 }
-
-f
