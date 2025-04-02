@@ -8,7 +8,7 @@ public class Battery {
     }
 
     public int getLadeStatus() {
-        int mittelwert = (
+        int mittelwert = 0;
         return mittelwert;
     }
 

@@ -1,25 +1,27 @@
 package at.darko.OO.Cars11;
 
 public class Car {
-
+    private int mileage;
     private Engine engine;
     private Manufacturer manufacturer;
-    private int color;
+    private String color;
     private int maxSpeed;
-    private String basePrice;
-    private String baseConsumption;
+    private int basePrice;
+    private double baseConsumption; // Liter per 100km
 
-
-    public void setEngine(Engine engine) {
+    public Car(int mileage, String color, int maxSpeed, int basePrice, double baseConsumption, Manufacturer manufacturer, Engine engine) {
+        this.mileage = mileage;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+        this.basePrice = basePrice;
+        this.baseConsumption = baseConsumption;
+        this.manufacturer = manufacturer;
         this.engine = engine;
     }
 
-    public void setManufacturer(Manufacturer manufacturer) {
-        this.manufacturer = manufacturer;
+    public double calculatePrice() {
+        return basePrice - (basePrice * manufacturer.getDiscount());
     }
 
-    public Car(int color) {
-        this.color = color;
-    }
 
 }
